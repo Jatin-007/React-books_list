@@ -3,6 +3,8 @@ import { connect } from 'react-redux';
 import { selectBook } from '../actions/index';
 import { bindActionCreators } from 'redux'; // action generated helps to forward it to the reducers in the application
 
+import styles from '../styles/style.css';
+
 class BookList extends Component {
     renderList() {
         return this.props.books.map((book) => {
@@ -14,11 +16,6 @@ class BookList extends Component {
                     <h5>
                         {book.title}
                     </h5>
-
-                    <p>
-                        {book.description}<br/>
-                        {book.price}
-                    </p>
                 </li>
             )
         })

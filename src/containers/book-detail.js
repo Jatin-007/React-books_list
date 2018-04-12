@@ -6,12 +6,16 @@ class BookDetail extends Component {
         if(!this.props.book){
             return <div>Select a Book to get Started</div>
         }
-        
+
         return (
-            <div>
-                <h3>Details for</h3>
+            <div className="container col-md-8 card">
+                <h3>{this.props.book.title}</h3>
+                <hr/>
                 <div>
-                    {this.props.book.title}
+                    <p>
+                        {this.props.book.description}<br/>
+                        {this.props.book.price}
+                    </p>
                 </div>
             </div>
         );

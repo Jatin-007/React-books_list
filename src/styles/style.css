@@ -1,0 +1,11 @@
+.navbar {
+    margin-bottom: 20px;
+}
+
+ul {
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    background-color: #e3e5ed;
+}
