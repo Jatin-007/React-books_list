@@ -19,11 +19,15 @@ class BookDetail extends Component {
             <div>
                 <div>
                     By: {this.props.book.author}<br/>
-                    {this.props.book.description}<br/>                
+                    {this.props.book.description}<br/>  
+                    <img className="img-thumbnail float-right col-md-4" src={this.props.book.image} alt="image"/>
                 </div>
+                <div className="col-md-12">
                     <p>
                         <div className="card col-md-3 font-weight-bold">Price: {this.props.book.price}</div>
+                        <a href={this.props.book.url} className="float-right"> BUY NOW! </a>
                     </p>
+                </div>
                 </div>
             </div>
         );
