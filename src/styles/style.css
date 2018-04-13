@@ -9,3 +9,12 @@ ul {
 .list-group-item:hover {
     background-color: #e3e5ed;
 }
+
+hr {
+   margin-top: 0rem;
+   border-width: 2px; 
+}
+
+.book-title {
+    margin-top: 10px;
+}
