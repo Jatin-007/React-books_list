@@ -12,11 +12,13 @@ ul {
 
 hr {
    margin-top: 0rem;
-   border-width: 2px; 
+   border-width: 2px;
+   margin-bottom: 5px; 
 }
 
 .book-title {
     margin-top: 10px;
+    margin-bottom: 8px;
 }
 
 button {
@@ -25,6 +27,33 @@ button {
 
 .book-image {
     padding: 4px;
-    width: 180px;
-    height: 240px;
+    width: 200px;
+    height: 260px;
+}
+.book-author {
+    color: blue;
+    margin-top: 0px;
+    font-size: 15px;
+
+}
+
+.description {
+    border-radius: 5px 4px 5px 4px;
+    background-color: #edeeef;
+    margin-top: 5px;
+}
+
+.description h5 {
+    margin: 5px;
+    text-decoration: underline;
+    color: #072377;
+}
+
+.price {
+    margin: 8px;
+    width: 130px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #4e5fe5;
+    color: white;
 }

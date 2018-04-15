@@ -5,7 +5,7 @@ import styles from '../styles/style.css';
 class BookDetail extends Component {
     render () {
         if(!this.props.book){
-            return <div className="col-md-6 col-md-offset-2"><h3>Select a Book to get Started</h3></div>
+            return <div className="d-flex justify-content-center"><h3>Select a Book to get Started</h3></div>
         }
 
         return (
@@ -18,13 +18,20 @@ class BookDetail extends Component {
 
             <div className="row">
                 <div className="container">
-                    By: {this.props.book.author}<br/>
-                    {this.props.book.description}<br/>  
-                    <img className="img-thumbnail float-right col-md-4 book-image" src={this.props.book.image} alt="image"/>
+                    <h6 className="book-author">By: {this.props.book.author}</h6>
+                   
+                   <div className="description col-md-8 border border-white">
+                        <h5>DESCRIPTION</h5>
+                        {this.props.book.description}
+                   </div>
+                   
+                   <br/>
+                   <img className="img-thumbnail float-right col-md-4 book-image border-right border-left" src={this.props.book.image} alt="image"/>
                 </div>
+                
                 <div className="col-md-12">
                     <p>
-                        <div className="card col-md-3 font-weight-bold">Price: {this.props.book.price}</div>
+                        <div className="card col-md-3 font-weight-bold price">Price: {this.props.book.price}</div>
                         <button className="btn btn-light float-right"><a href={this.props.book.url}> BUY NOW! </a></button>
                     </p>
                 </div>
