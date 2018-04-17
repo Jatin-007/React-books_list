@@ -72,4 +72,5 @@ button {
 .book-button:hover {
     color: #4242f4;
     background-color: white;
+    border: 1px solid #4242f4;
 }
