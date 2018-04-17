@@ -25,7 +25,7 @@ class BookList extends Component {
         return (
             <div>
                 <ul className="list-group col-md-4">
-                    <li className="list-group-item list-group-item-dark font-weight-bold text-uppercase"><h4>List of Books</h4></li>
+                    <li className="list-group-item list-group-item-dark font-weight-bold text-uppercase book-list-heading"><h4>List of Books</h4></li>
                     {this.renderList()}
                 </ul>                    
             </div>  

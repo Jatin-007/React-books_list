@@ -25,6 +25,11 @@ button {
     margin: 5px;
 }
 
+.book-list-heading {
+    cursor: default;
+    float: right; 
+}
+
 .book-image {
     padding: 4px;
     width: 200px;
@@ -54,6 +59,17 @@ button {
     width: 130px;
     padding-top: 5px;
     padding-bottom: 5px;
-    background-color: #4e5fe5;
+    color: black;
+}
+
+.book-button {
+    margin-top: 7px;
+    background-color: #4242f4;
     color: white;
+    font-weight: bold;
+}
+
+.book-button:hover {
+    color: #4242f4;
+    background-color: white;
 }

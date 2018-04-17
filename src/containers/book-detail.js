@@ -32,7 +32,7 @@ class BookDetail extends Component {
                 <div className="col-md-12">
                     <p>
                         <div className="card col-md-3 font-weight-bold price">Price: {this.props.book.price}</div>
-                        <button className="btn btn-light float-right"><a href={this.props.book.url}> BUY NOW! </a></button>
+                        <a href= {this.props.book.url} className="btn float-left book-button"> BUY NOW! </a>
                     </p>
                 </div>
                 </div>
